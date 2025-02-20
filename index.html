@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <style>
+        .loading-text {
+            display: inline-block;
+            min-width: 120px; /* Stellt sicher, dass der Platz für die Animation reserviert ist */
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">peatz made.</a>
+        <nav>
+            <a href="#" class="active"></a>
+            <a href="#">shop</a>
+            <a href="#">about</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>peatzmade<span></span></h1>
+            <p class="loading-text">loading..............75%</p>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/channel/UCPnsdvr1BY68GlMMeLhI0UA" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/peatzmade/?hl=de" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/?lang=de" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <a href="https://www.beatstars.com/onboarding/account-type?backEnabled=true" target="_blank" class="btn">Beatstars</a> 
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loadingText = document.querySelector(".loading-text");
+            const text = "loading..............75%";
+            let index = 0;
+
+            function typeEffect() {
+                loadingText.textContent = text.substring(0, index);
+                index++;
+                if (index > text.length) {
+                    index = 0;
+                }
+                setTimeout(typeEffect, 250);
+            }
+
+            typeEffect();
+        });
+    </script>
+</body>
+</html>
