@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     background-color: transparent;
     color: white;
-    background-image: url('https://github.com/Peatzmade/stand-21.02.2025/blob/main/Pic.jpg');
+    background-image: url('https://raw.githubusercontent.com/Peatzmade/stand-21.02.2025/main/Pic.jpg');
     background-size: cover;  /* Bild soll den gesamten Bildschirm ausfüllen */
     background-position: center;  /* Bild wird zentriert */
     background-repeat: no-repeat;  /* Bild wird nicht wiederholt */
